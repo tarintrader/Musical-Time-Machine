@@ -17,8 +17,8 @@ div_rows = soup.find_all(name="div", class_="o-chart-results-list-row-container"
 h3_tags = [row.find(name="h3", id="title-of-a-story", class_="c-title") for row in div_rows]
 tracklist = [tag.getText().strip() for tag in h3_tags]
 
-CLIENT_ID = "273b1ae0fc9b41e1b40d521039bf92ae"
-CLIENT_SECRET = "54ddf739278b44d28806059176b56aeb"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 REDIRECT_URI = "http://example.com"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
